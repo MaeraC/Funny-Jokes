@@ -1,0 +1,81 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body {
+    font-family: 'Luxurious Roman', cursive;
+	background: linear-gradient(-45deg, #d274f7, #8dfd9f, #fa82b0, #95def8);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+    color: black;
+    text-shadow: 5px 5px 8px white;
+}
+
+.app {
+    background: black;
+    width: 40%;
+    color: white;
+    margin: 10% auto;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px inset black , 
+    -5px -5px 20px inset grey;
+    cursor: pointer;
+}
+.app:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+#header {
+   font-size: 25px;
+}
+
+#content {
+    font-size: 20px;
+}
+
+button {
+    height: 50px;
+    padding: 0 30px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(125deg, rgb(51, 3, 47), violet );
+    font-size: 18px;
+    box-shadow: 2px 2px 10px inset rgb(253, 251, 251) , 
+    -5px -5px 10px inset rgb(2, 2, 2);
+    color: white;
+    margin: 20px 0;
+    display: none;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES *********************************************/
+
+@media only screen and (max-width: 600px) {
+    .app {
+        width: 80%;
+    }
+    button {
+        display: inline-block;
+    }
+    
+}
